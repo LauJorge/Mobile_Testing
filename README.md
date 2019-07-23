@@ -26,6 +26,7 @@ edit bash profile
 	'source .bash_profile'
 
 ##### Install Appium
- Download https://github.com/appium/appium-desktop/releases/tag/v1.14.0-beta.1
- Launch appium
- Start appium server
+- Download https://github.com/appium/appium-desktop/releases/tag/v1.14.0-beta.1
+- Launch appium
+- Start appium server
+
