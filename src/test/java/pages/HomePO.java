@@ -21,7 +21,7 @@ public class HomePO extends BasePO {
         tittle_btn .click();
     }
 
-    public void openButtons() {
+    public void selectButtons() {
         WebElement buttons_btn = driver.findElementById("com.afollestad.materialdialogssample:id/basic_checkbox_titled_buttons");
         buttons_btn.click();
     }
@@ -37,7 +37,7 @@ public class HomePO extends BasePO {
         return checkbox;
     }
 
-    public WebElement checkList() {
+    public WebElement getListElement() {
         //Try this below the code
         String a = "Google+"; /// last element in the list
         Boolean found_result = false;
@@ -64,7 +64,7 @@ public class HomePO extends BasePO {
         return h;
     }
 
-    public void openDisable() {
+    public void selectDisable() {
         WebElement list_btn = driver.findElementById("com.afollestad.materialdialogssample:id/multiple_choice_disabled_items");
         list_btn.click();
     }
@@ -95,5 +95,26 @@ public class HomePO extends BasePO {
         touchAction.longPress(PointOption.point(fromX, fromY)).moveTo(PointOption.point(toX, toY)).release().perform();
     }
 
+    public void enterText(){
+        WebElement text_input = driver.findElementById("com.afollestad.materialdialogssample:id/password");
+        text_input.clear();
+        text_input.sendKeys("lau");;
+    }
+
+    public void checkShowPass() {
+    WebElement show_pass_check = driver.findElementById("com.afollestad.materialdialogssample:id/showPassword");
+    show_pass_check.click();
+    }
+
+    public String getPass() {
+        WebElement enc_pass = driver.findElementById("com.afollestad.materialdialogssample:id/password");
+        String pass = enc_pass.getText();
+        return pass;
+    }
+
+    public void selectPass() {
+        WebElement pass_btn = driver.findElementById("com.afollestad.materialdialogssample:id/custom_view");
+        pass_btn.click();
+    }
 
 }

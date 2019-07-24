@@ -1,7 +1,5 @@
 package tests;
 
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
@@ -14,28 +12,38 @@ public class AppTest extends BasePO {
     @Test
     public void validateTittle(){
         hp.selectTitle();
-        Assert.assertTrue(hp.getTittle().isDisplayed());
+        Assert.assertEquals(hp.getTittle().getText(), "Use Google's Location Services?");
     }
 
     @Test
     public void validateButtons(){
-        hp.openButtons();
+        hp.selectButtons();
         Assert.assertTrue(hp.getButtons().isEnabled());
     }
 
     @Test
     public void validateCheckbox(){
-        hp.openButtons();
+        hp.selectButtons();
         Assert.assertTrue(!hp.getCheckbox().isSelected());
     }
+
 
     @Test
     public void validateList(){
         hp.scrollDown();
         hp.scrollDown();
         hp.openList();
-        hp.checkList();
-        Assert.assertTrue(!hp.checkList().isSelected());
+        hp.getListElement();
+        Assert.assertTrue(!hp.getListElement().isSelected());
+    }
+
+    @Test
+    public void validateDisplayEncryptedPass(){
+     c
+        hp.selectPass();
+        hp.enterText();
+        hp.checkShowPass();
+        Assert.assertEquals(hp.getPass(), "lau");
     }
 
     @Test
@@ -43,10 +51,12 @@ public class AppTest extends BasePO {
         hp.scrollDown();
         hp.scrollDown();
         hp.scrollDown();
-        hp.openDisable();
-        hp.checkList();
-        Assert.assertTrue(!hp.checkList().isEnabled());
+        hp.selectDisable();
+        hp.getListElement();
+        Assert.assertTrue(!hp.getListElement().isEnabled());
     }
+
+
 
     @AfterMethod
     public void close(){
