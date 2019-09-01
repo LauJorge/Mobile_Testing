@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="tests.AppTest" duration-ms="13250" started-at="2019-09-01T04:27:46Z" finished-at="2019-09-01T04:27:59Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="13250" started-at="2019-09-01T04:27:46Z" finished-at="2019-09-01T04:27:59Z">
+      <class name="tests.AppTest">
+        <test-method status="PASS" signature="setupAppium()[pri:0, instance:tests.AppTest@90f6bfd]" name="setupAppium" is-config="true" duration-ms="26694" started-at="2019-09-01T04:27:19Z" finished-at="2019-09-01T04:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAppium -->
+        <test-method status="PASS" signature="validateCheckbox()[pri:0, instance:tests.AppTest@90f6bfd]" name="validateCheckbox" duration-ms="2139" started-at="2019-09-01T04:27:46Z" finished-at="2019-09-01T04:27:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckbox -->
+        <test-method status="PASS" signature="close()[pri:0, instance:tests.AppTest@90f6bfd]" name="close" is-config="true" duration-ms="1090" started-at="2019-09-01T04:27:48Z" finished-at="2019-09-01T04:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="validateList()[pri:0, instance:tests.AppTest@90f6bfd]" name="validateList" duration-ms="8951" started-at="2019-09-01T04:27:49Z" finished-at="2019-09-01T04:27:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateList -->
+        <test-method status="PASS" signature="close()[pri:0, instance:tests.AppTest@90f6bfd]" name="close" is-config="true" duration-ms="1049" started-at="2019-09-01T04:27:58Z" finished-at="2019-09-01T04:27:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="uninstallApp()[pri:0, instance:tests.AppTest@90f6bfd]" name="uninstallApp" is-config="true" duration-ms="69" started-at="2019-09-01T04:27:59Z" finished-at="2019-09-01T04:27:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uninstallApp -->
+      </class> <!-- tests.AppTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- tests.AppTest -->
+</testng-results>

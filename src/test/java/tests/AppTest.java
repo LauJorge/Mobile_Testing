@@ -9,7 +9,7 @@ import pages.HomePO;
 public class AppTest extends BasePO {
     HomePO hp = new HomePO();
 
-    @Test
+ /*   @Test
     public void validateTittle(){
         hp.selectTitle();
         Assert.assertEquals(hp.getTittle().getText(), "Use Google's Location Services?");
@@ -19,7 +19,7 @@ public class AppTest extends BasePO {
     public void validateButtons(){
         hp.selectButtons();
         Assert.assertTrue(hp.getButtons().isEnabled());
-    }
+    }*/
 
     @Test
     public void validateCheckbox(){
@@ -36,10 +36,11 @@ public class AppTest extends BasePO {
         hp.getListElement();
         Assert.assertTrue(!hp.getListElement().isSelected());
     }
+/*
 
     @Test
     public void validateDisplayEncryptedPass(){
-     c
+
         hp.selectPass();
         hp.enterText();
         hp.checkShowPass();
@@ -57,6 +58,7 @@ public class AppTest extends BasePO {
     }
 
 
+*/
 
     @AfterMethod
     public void close(){

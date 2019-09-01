@@ -27,7 +27,7 @@ import java.util.concurrent.TimeUnit;
             url = new URL(URL_STRING);
 
             capabilities = new DesiredCapabilities();
-            capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
+            capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "LauNexus");
             capabilities.setCapability(MobileCapabilityType.APP, "https://github.com/afollestad/material-dialogs/raw/master/sample/sample.apk");
             capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
             capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
